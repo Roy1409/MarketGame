@@ -1,6 +1,5 @@
 import java.util.Scanner;
 
-
 public class Work {
     private int total;
     private Scanner scan1;
