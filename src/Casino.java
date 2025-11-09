@@ -7,9 +7,8 @@ public class Casino {
         this.scan=scan;
         this.money=money;
     }
-
     public void dialogue() {
-        System.out.println("Welcome to Casino!\nThese are your game options\n(1)Single draw lotto\n(2)Triple draw lotto\n(3)Roulette\n(4)Exit");
+        System.out.println("Welcome to Casino!\nMoney = "+money+"\nThese are your game options\n(1)Single draw lotto\n(2)Triple draw lotto\n(3)Roulette\n(4)Exit");
         int ans=0;
         int num=0;
         int guess=0;
@@ -59,10 +58,15 @@ public class Casino {
                 System.out.println("You have "+money+" left");
             }
             if (ans!=4) {System.out.println("Welcome to Casino!\nThese are your game options\n(1)Single draw lotto\n(2)Triple draw lotto\n(3)Roulette\n(4)Exit");
-        }}
-        scan.nextLine();
-
-
-
+            }
+        }
+            scan.nextLine();
+    }
+    public void change(int x) {
+        money=x;
+    }
+    public int add() {
+        return money;
     }
 }
+
